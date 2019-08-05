@@ -10,7 +10,7 @@ namespace RPSLS
         Player Player1;
         Player Player2;
 
-        string[] Gestures = { "rock", "paper", "scissors", "lizard", "spock" };
+        public List<string> Gestures = new List<string>() { "rock", "paper", "scissors", "lizard", "spock" };
 
         //constructor
         public Game()
@@ -21,9 +21,9 @@ namespace RPSLS
         //member methods
         public void RunGame()
         {
-            int PlayerNumber = GetNumberOfPlayers();
+            int PlayerNumber = nOfPlayers();
 
-            while (SettingUpPlayers(PlayerNumber));
+             
             {
                 Player1.ChooseGesture();
                 Player2.ChooseGesture();
@@ -33,7 +33,7 @@ namespace RPSLS
         }
 
 
-        private int GetNumberOfPlayers()
+        private void int nOfPlayers()
         {
             Console.WriteLine("Are there one or two players?");
             int NumberOfPlayers = int.Parse(Console.ReadLine());
