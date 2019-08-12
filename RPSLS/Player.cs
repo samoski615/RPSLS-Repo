@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RPSLS
 {
-    public abstract class Player
+    public class Player
     {
         //member variables
         string gesture;
@@ -18,17 +18,14 @@ namespace RPSLS
         }
 
         //member methods
-        public abstract void ChooseName()
-        {
+       
 
-        }
+        //public void ChooseGesture()
+        //{
+        //    if()
+        //    {
 
-        public abstract void ChooseGesture()
-        {
-            if()
-            {
-
-            }
-        }
+        //    }
+        //}
     }
 }

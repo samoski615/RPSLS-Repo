@@ -7,18 +7,28 @@ namespace RPSLS
     public class CPU : Player
     {
         //member variables
+        Random rng;
+        public List<string> Gestures;
 
         //constructor
 
         public CPU()
         {
-
+            rng = new Random();
+            Gestures = new List<string>() { "rock", "paper", "scissors", "lizard", "spock" };
         }
 
         //member methods
-        public override void ChooseGesture()
+        public void CPUGesture()
         {
-            Random RandomNumber = new Random();
+            Gestures = null;
+            
+           
+        }
+
+        public int GenerateRandomGesture()
+        { 
+             return rng.Next(Gestures.Count);
         }
     }
 }

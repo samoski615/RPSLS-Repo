@@ -13,13 +13,13 @@ namespace RPSLS
         {
 
         }
-        public override void ChooseName()
+        public void ChooseName()
         {
             Console.WriteLine("Please type your name");
             string name = Console.ReadLine();
         }
 
-        public override void ChooseGesture()
+        public void ChooseGesture()
         {
             Console.WriteLine("Choose your gesture! -- ROCK, PAPER, SCISSORS, LIZARD, or SPOCK?");
             string gesture = Console.ReadLine();
